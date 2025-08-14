@@ -6,15 +6,7 @@
 
 > 🎬 **MoonTV** 是一个开箱即用的、跨平台的影视聚合播放器。它基于 **Next.js 14** + **Tailwind&nbsp;CSS** + **TypeScript** 构建，支持多资源搜索、在线播放、收藏同步、播放记录、本地/云端存储，让你可以随时随地畅享海量免费影视内容。
 
-<div align="center">
 
-![Next.js](https://img.shields.io/badge/Next.js-14-000?logo=nextdotjs)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3-38bdf8?logo=tailwindcss)
-![TypeScript](https://img.shields.io/badge/TypeScript-4.x-3178c6?logo=typescript)
-![License](https://img.shields.io/badge/License-MIT-green)
-![Docker Ready](https://img.shields.io/badge/Docker-ready-blue?logo=docker)
-
-</div>
 
 ---
 
@@ -27,7 +19,7 @@
 - 📱 **PWA**：离线缓存、安装到桌面/主屏，移动端原生体验。
 - 🌗 **响应式布局**：桌面侧边栏 + 移动底部导航，自适应各种屏幕尺寸。
 - 🚀 **极简部署**：一条 Docker 命令即可将完整服务跑起来，或免费部署到 Vercel 和 Cloudflare。
-- 👿 **智能去广告**：自动跳过视频中的切片广告（实验性）
+- 👿 **智能去广告**：自动跳过视频中的切片广告（实验性），但实际测试结果是：可能导致部分画面被直接切除
 
 <details>
   <summary>点击查看项目截图</summary>
@@ -261,6 +253,7 @@ MoonTV 支持标准的苹果 CMS V10 API 格式。
 ## AndroidTV 使用
 
 目前该项目可以配合 [OrionTV](https://github.com/zimplexing/OrionTV) 在 Android TV 上使用，可以直接作为 OrionTV 后端
+对于 OrionTV 的安装包，后续会定期进行搬运（方便各位直接食用）
 
 暂时收藏夹与播放记录和网页端隔离，后续会支持同步用户数据
 
@@ -285,6 +278,7 @@ MoonTV 支持标准的苹果 CMS V10 API 格式。
 1. **设置环境变量 `PASSWORD`**：为您的实例设置一个强密码
 2. **仅供个人使用**：请勿将您的实例链接公开分享或传播
 3. **遵守当地法律**：请确保您的使用行为符合当地法律法规
+4. **不建议Cloudflare进行托管**：早在2025年8月6日时，原作者已经禁止了Cloudflare的部署
 
 ### 重要声明
 
@@ -292,6 +286,7 @@ MoonTV 支持标准的苹果 CMS V10 API 格式。
 - 请勿将部署的实例用于商业用途或公开服务
 - 如因公开分享导致的任何法律问题，用户需自行承担责任
 - 项目开发者不对用户的使用行为承担任何法律责任
+- 如果您自己使用Cloudflare的静态Pages部署而导致Pages功能被封禁的，结果由您自己承担
 
 ## License
 
@@ -299,8 +294,5 @@ MoonTV 支持标准的苹果 CMS V10 API 格式。
 
 ## 致谢
 
-- [ts-nextjs-tailwind-starter](https://github.com/theodorusclarence/ts-nextjs-tailwind-starter) — 项目最初基于该脚手架。
-- [LibreTV](https://github.com/LibreSpark/LibreTV) — 由此启发，站在巨人的肩膀上。
-- [ArtPlayer](https://github.com/zhw2590582/ArtPlayer) — 提供强大的网页视频播放器。
-- [HLS.js](https://github.com/video-dev/hls.js) — 实现 HLS 流媒体在浏览器中的播放支持。
-- 感谢所有提供免费影视接口的站点。
+- [项目源作者](https://github.com/samqin123/MoonTV) — 当前原项目由于Pages静态页面大批被封禁，当前已经不再支持Cloudflare托管
+
