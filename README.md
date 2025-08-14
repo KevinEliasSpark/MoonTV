@@ -115,6 +115,8 @@
 3. 返回你的 pages 项目，进入 **设置 -> 绑定**，添加绑定 D1 数据库，选择你刚创建的数据库，变量名称填 **DB**
 4. 设置环境变量 NEXT_PUBLIC_STORAGE_TYPE，值为 **d1**；设置 USERNAME 和 PASSWORD 作为站长账号
 5. 重试部署
+6. （可选）如果你认为Cloudflare提供给你的域名不好记/你有自己的域名，也可以通过自定义域名
+
 
 ### Docker 部署
 
@@ -295,5 +297,6 @@ MoonTV 支持标准的苹果 CMS V10 API 格式。
 ## 致谢
 
 - [项目源作者](https://github.com/samqin123/MoonTV) — 当前原项目由于Pages静态页面大批被封禁，当前已经不再支持Cloudflare托管
+
 
 
